@@ -1,3 +1,9 @@
+// let securityPrompt = window.prompt('Please enter password')
+// const security = (str) => {
+
+// }
+
+
 let db = JSON.parse(localStorage.getItem("db"))
 if (db === null || db === undefined) {
   db = []
@@ -30,14 +36,12 @@ dataBase.addEventListener(`click`, (event) => {
   passwordLI.innerText = `Password: ${pass.value}`
 
   const deleteButtonLI = document.createElement('button')
-  deleteButtonLI.innerText = "delete"
 
   const ul = document.querySelector('ul')
   ul.appendChild(domainLI)
   ul.appendChild(usernameLI)
   ul.appendChild(passwordLI)
-  ul.appendChild(deleteButtonLI)
-
+  
   const newDB = {
     domain: domain,
     username: username,
@@ -50,7 +54,8 @@ dataBase.addEventListener(`click`, (event) => {
 
 const ul = document.querySelector('ul')
 
-for (const newObj of db) {
+
+  for (const newObj of db) {
 
   const domainName = document.createElement('li')
   domainName.innerText = ` Domain Name: ${newObj.domain}`
@@ -69,13 +74,15 @@ for (const newObj of db) {
   ul.appendChild(userName)
   ul.appendChild(pass)
   ul.appendChild(byeBye)
-
 }
+
 
 
 
 const deleteAll = document.querySelector('#delete-all-button')
 deleteAll.addEventListener('keydown', () => {
-  localStorage.clear();
+  localStorage.clear()
   window.location.reload()
 })
+
+
