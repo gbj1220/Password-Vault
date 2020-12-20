@@ -2,8 +2,10 @@ let db = JSON.parse(localStorage.getItem("db"))
 if (db === null || db === undefined) {
   db = []
 }
-const dataBase = document.querySelector('#new-button')
+const dataBase = document.querySelector('#submit-button')
 dataBase.addEventListener(`click`, () => {
+
+  const clearDom = document.querySelector('#domain-name') 
 
   const domainName = document.querySelector('#domain-name')
   domain = domainName.value
@@ -36,7 +38,6 @@ dataBase.addEventListener(`click`, () => {
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
 
-
 })
 
 const ul = document.querySelector('ul')
@@ -62,5 +63,6 @@ for (const newObj of db) {
 
 const deleteAll = document.querySelector('#delete-all-button')
 deleteAll.addEventListener('click', () => {
-localStorage.clear()
+localStorage.clear();
+window.location.reload()
 })

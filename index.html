@@ -6,31 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Vault</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 
 <body id="body">
   <section id="container">
-    <section id="header">Das Vault</section>
+    <section id="header">Das Vault
+      <a href=" https://github.com/gbj1220/Password-Vault/blob/main/README.md" id="readme-link">Check out this READme
+        for more info</a>
+    </section>
     <section id="current-passwords">
-      <h2>Current Passwords</h2>
       <button type="button" id="delete-all-button">Delete All</button>
-      <ul>
-        <div id="list-items" class="list-items">
-        </div>
-      </ul>
+
+        <h2>Current Passwords</h2>
+        <ul>
+          <div id="list-items" class="list-items">
+          </div>
+        </ul>
     </section>
     <section class="enter-new">
-      <div id="new-button">
-        <button type="button" id="submit-button">
-          Submit
-        </button>
-      </div>
+      <button type="button" id="submit-button">Submit</button>
       <section id="user-inputs">
         <div>
-          <input type="text" type="" placeholder="Input domain name..." id="domain-name" class="input" name="name"
-            required>
+          <input type="text" placeholder="Input domain name..." id="domain-name" class="input" name="name" required>
         </div>
         <div>
           <input type="text" placeholder="Input username for domain..." id="username" class="input" name="name"
@@ -43,7 +41,6 @@
     </section>
 
   </section>
-  <!-- <section id="footer">Footer</section> -->
 
   <script src="./db.js"></script>
   <script src="./main.js"></script>

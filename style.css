@@ -2,11 +2,11 @@
   display: grid;
   height: 100vh;
   width: 100%;
-  background-color: greenyellow;
-  grid-template-columns: 40% 60%;
+  background-color: darkred;
+  grid-template-columns: 20% 80%;
   grid-template-rows: 15% 80% 5%;
   grid-template-areas: 
-  "hdr hdr"
+  "cpw hdr"
   "cpw ent"
   "cpw ftr"
 }
@@ -16,14 +16,19 @@ justify-items: center;
 align-content: center;
 }
 
+#readme-link {
+  font-size: .3em;
+  color: yellow;
+}
+
 #header {
   display: grid;
   font-size: 4rem;
   justify-items: center;
   align-content: center;
   grid-area: hdr;
-  background-color: gray;
-  color: greenyellow;
+  background-color: darkred;
+  color: black;
   width: 100%;
 }
 
@@ -31,42 +36,61 @@ align-content: center;
   height: 100%;
   text-align: center;
   grid-area: cpw;
-  background-color: gray;
-  color: greenyellow;
+  background-color: black;
+  color: darkred;
 }
 
 #submit-button {
-  justify-content: center;
-  height: 100px;
-  width: 200px;
+  height: 50px;
+  width: 100px;
   border-radius: 10%;
-  font-size: 2em;
-  background-color: gray;
-  color: greenyellow;
+  font-size: 1.5em;
+  background-color: black;
+  color: darkred;
+  grid-area: smb;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: yellow;
 }
 
+
 #delete-all-button {
-  width: 80px;
-  height: 40px;
+  width: 70%;
+  border-color: yellow;
+  border-style: solid;
+  background-color: black;
+  color: darkred;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 20px;
 }
 
 #domain-name {
   width: 300px;
-  background-color: gray;
-  color: greenyellow;
+  background-color: black;
+  color: darkred;
+  font-weight: bold;
+  border-color: yellow;
+  border-style: solid;
 }
 
 
 #username {
   width: 300px;
-  background-color: gray;
-  color:  greenyellow;
+  background-color: black;
+  color:  darkred;
+  font-weight: bold;
+  border-color: yellow;
+  border-style: solid;
 }
 
 #password {
   width: 300px;
-  background-color: gray;  
-  color: greenyellow;
+  background-color: black;  
+  color: darkred;
+  font-weight: bold;
+  border-color: yellow;
+  border-style: solid;
 }
 
 #footer {
@@ -86,12 +110,16 @@ align-content: center;
   height: 100%;
   flex-direction: column;
   justify-items: space-between;
-  align-content:space-around ;
-
+  align-items: center;
 }
 
 #new-button button {
   float: right;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+#new-button {
 }
 
 #user-inputs {
@@ -103,16 +131,102 @@ align-content: center;
   align-items: center;
 }
 
-ul {
+ul li {
   list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
-}
-
-li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  justify-items: space-between;
+  margin-right: 50px;
+}
+
+@media(max-width: 400px)  {
+  #container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    background-color: darkred;
+    align-content: space-around;
+    grid-template-areas: 
+    "hdr"    
+    "cpw"
+    "smb"
+    "ent"
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    background-color: black;
+    color: darkred;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+  }
+
+  #new-button {
+    grid-area: nbt;
+    margin-right: 40px;
+  }
+
+  #enter-new {
+    grid-area: ent;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    width: 100%;
+    height: 100%;
+    align-content:space-around ;
+  }
+
+  #current-passwords {
+    grid-area: cpw;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin-top: 20px;
+    background-color: darkred;
+    color: black;
+    font-weight: bold;
+  }
+
+  #submit-button {
+    grid-area: smb;
+    height: 50px;
+    width: 100px;
+    font-size: 1em;
+    background-color: darkred;
+    color: black;
+    font-weight: bold;
+  }
+
+
+  #user-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #domain-name {
+    width: 300px;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+}
+
+  #username {
+    width: 300px;
+    background-color: darkred;
+    color:  red;
+    font-weight: bold;
+    background-color: black;
+}
+
+  #password {
+    width: 300px;
+    background-color: darkred;  
+    color: red;
+    font-weight: bold;
+    background-color: black;
+}
 }
