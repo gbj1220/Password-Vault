@@ -2,17 +2,18 @@
   display: grid;
   height: 100vh;
   width: 100%;
-  background-color: skyblue;
+  background-color: greenyellow;
   grid-template-columns: 40% 60%;
   grid-template-rows: 15% 80% 5%;
   grid-template-areas: 
   "hdr hdr"
   "cpw ent"
-  "ftr ftr"
+  "cpw ftr"
 }
 
 body {
-
+justify-items: center;
+align-content: center;
 }
 
 #header {
@@ -21,8 +22,8 @@ body {
   justify-items: center;
   align-content: center;
   grid-area: hdr;
-  background-color: green;
-  color: white;
+  background-color: gray;
+  color: greenyellow;
   width: 100%;
 }
 
@@ -30,41 +31,52 @@ body {
   height: 100%;
   text-align: center;
   grid-area: cpw;
-  background-color: green;
-  color: white;
+  background-color: gray;
+  color: greenyellow;
 }
 
-#create-new-button {
+#submit-button {
   justify-content: center;
   height: 100px;
   width: 200px;
   border-radius: 10%;
+  font-size: 2em;
+  background-color: gray;
+  color: greenyellow;
+}
+
+#delete-all-button {
+  width: 80px;
+  height: 40px;
 }
 
 #domain-name {
-  width: 200px;
-  background-color: yellow;
+  width: 300px;
+  background-color: gray;
+  color: greenyellow;
 }
 
+
 #username {
-  width: 200px;
-  background-color: yellow;
+  width: 300px;
+  background-color: gray;
+  color:  greenyellow;
 }
 
 #password {
-  width: 200px;
-  background-color: yellow;  
+  width: 300px;
+  background-color: gray;  
+  color: greenyellow;
 }
 
 #footer {
   display: grid;
   grid-area: ftr;
-  justify-content: center;
-  justify-content: center;
-  height: 100%;
+  justify-content: right;
+  align-items: center;
+  height: 50px;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: gray;
 }
 
 .enter-new {
@@ -89,4 +101,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  justify-items: space-between;
 }
