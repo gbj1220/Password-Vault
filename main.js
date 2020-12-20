@@ -3,13 +3,9 @@ if (db === null || db === undefined) {
   db = []
 }
 const dataBase = document.querySelector('#submit-button')
-dataBase.addEventListener(`keydown`, (e) => {
-  if (e.keyCode === 13) {
-    validate(e);
-  }
-  function validate(e) {
-    const text = e.target.value;
-}
+dataBase.addEventListener(`click`, (event) => {
+  // console.log(event)
+
   const domainName = document.querySelector('#domain-name')
   domain = domainName.value
 
@@ -71,16 +67,7 @@ for (const newObj of db) {
 
 
 const deleteAll = document.querySelector('#delete-all-button')
-deleteAll.addEventListener('keydown', (e) => {
-  if (e.keyCode === 13) {
-    validate(e)
-  }
-  
-  
+deleteAll.addEventListener('keydown', (event) => {
   localStorage.clear();
   window.location.reload()
 })
-
-function validate(e) {
-  const text = e.target.value
-}
