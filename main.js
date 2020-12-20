@@ -40,13 +40,9 @@ dataBase.addEventListener(`click`, () => {
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
 
-  inputDomainLine = document.querySelector('#domain-name')
-  const clearUserInput = () => {
-    if (inputDomainLine.text > 0) {
-      inputDomainLine.clear()
-    }
-  }
-  clearUserInput()
+  window.location.reload()
+
+  
 })
 
 const ul = document.querySelector('ul')
