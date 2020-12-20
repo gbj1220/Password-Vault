@@ -5,10 +5,12 @@ if (db === null || db === undefined) {
 const dataBase = document.querySelector('#submit-button')
 dataBase.addEventListener(`click`, () => {
 
-  const clearDom = document.querySelector('#domain-name') 
 
   const domainName = document.querySelector('#domain-name')
   domain = domainName.value
+
+  localStorage.clear(domain)
+  console.log(domainName.value)
 
   const userName = document.querySelector('#username')
   username = userName.value
@@ -38,6 +40,13 @@ dataBase.addEventListener(`click`, () => {
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
 
+  inputDomainLine = document.querySelector('#domain-name')
+  const clearUserInput = () => {
+    if (inputDomainLine.text > 0) {
+      inputDomainLine.clear()
+    }
+  }
+  clearUserInput()
 })
 
 const ul = document.querySelector('ul')

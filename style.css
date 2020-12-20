@@ -68,7 +68,7 @@ align-content: center;
 #domain-name {
   width: 300px;
   background-color: black;
-  color: darkred;
+  color: yellow;
   font-weight: bold;
   border-color: yellow;
   border-style: solid;
@@ -78,7 +78,7 @@ align-content: center;
 #username {
   width: 300px;
   background-color: black;
-  color:  darkred;
+  color:  yellow;
   font-weight: bold;
   border-color: yellow;
   border-style: solid;
@@ -87,7 +87,7 @@ align-content: center;
 #password {
   width: 300px;
   background-color: black;  
-  color: darkred;
+  color: silver;
   font-weight: bold;
   border-color: yellow;
   border-style: solid;
@@ -96,7 +96,7 @@ align-content: center;
 #footer {
   display: grid;
   grid-area: ftr;
-  justify-content: right;
+  justifs-content: right;
   align-items: center;
   height: 50px;
   width: 100%;
