@@ -146,9 +146,8 @@ ul li {
     grid-template-rows: 10% 35% 35% 20%;
     grid-template-columns: 100%;
     background-color: darkred;
-    align-content: space-around;
-    background-image: url("https://media.giphy.com/media/EBId5v0YNRyPGHytLK/giphy.gif");
-    background-position: 11cm;
+    background-image: url("https://media.giphy.com/media/KcDreBsNBhGVrXYWAr/giphy.gif");
+    background-position: 16.3cm;
     grid-template-areas: 
     "hdr"    
     "smb"
@@ -165,6 +164,8 @@ ul li {
     color: darkred;
     justify-content: center;
     align-items: center;
+    font-family: cursive;
+    font-style: italic;
   }
 
 
@@ -189,6 +190,8 @@ ul li {
     background-color: darkred;
     color: black;
     font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
   }
 
   #submit-button {
@@ -200,8 +203,14 @@ ul li {
     color: black;
     font-weight: bold;
     margin-top: 400px;
+    font-style:italic;
+    font-family: cursive;
   }
 
+  #delete-all-button {
+    font-style: italic;  
+    font-family: cursive;
+  }
 
   #user-inputs {
     display: flex;
@@ -228,9 +237,10 @@ ul li {
     color: yellow;
     font-weight: bold;
     background-color: black;
-}
+  }
 
   #readme-link {
+    margin-top: -22px;
     font-size: .2em;
   }
 }
