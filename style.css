@@ -12,6 +12,11 @@
   "cpw ftr"
 }
 
+button {
+  width: 50px;
+  height: 25px;
+}
+
 body {
   justify-items: center;
   align-content: center;
@@ -57,6 +62,7 @@ body {
 
 #delete-all-button {
   width: 70%;
+  height: 50px;
   border-color: yellow;
   border-style: solid;
   background-color: black;
@@ -142,7 +148,7 @@ ul li {
 @media(max-width: 400px)  {
   #container {
     display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 10% 35% 35% 20%;
     grid-template-columns: 100%;
     background-color: darkred;
     align-content: space-around;
@@ -180,6 +186,7 @@ ul li {
     grid-area: cpw;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-top: 20px;
     background-color: darkred;
@@ -209,11 +216,11 @@ ul li {
     background-color: black;
     color: red;
     font-weight: bold;
+    margin-top: 900px;
 }
 
   #username {
     width: 300px;
-    background-color: darkred;
     color:  red;
     font-weight: bold;
     background-color: black;
@@ -221,7 +228,6 @@ ul li {
 
   #password {
     width: 300px;
-    background-color: darkred;  
     color: red;
     font-weight: bold;
     background-color: black;
