@@ -167,7 +167,6 @@ button {
     height: 100vh;
     grid-template-rows: 10% 35% 35% 20%;
     grid-template-columns: 100%;
-    background-color: darkred;
     background-image: url("https://media.giphy.com/media/KcDreBsNBhGVrXYWAr/giphy.gif");
     background-position: 16.3cm;
     grid-template-areas: 
@@ -188,18 +187,6 @@ button {
     align-items: center;
     font-family: cursive;
     font-style: italic;
-  }
-
-
-  #enter-new {
-    grid-area: ent;
-    display: flex;
-    flex-direction: row;
-    margin-top: -100px;
-    width: 100%;
-    height: 100%;
-    align-content:space-around ;
-    justify-content: left;
   }
 
   #current-passwords {
@@ -223,8 +210,9 @@ button {
     font-size: 1em;
     background-color: darkred;
     color: black;
-    font-weight: bold;
     margin-top: 400px;
+    margin-left: 40px;
+    font-weight: bold;
     font-style:italic;
     font-family: cursive;
   }
@@ -232,6 +220,7 @@ button {
   #delete-all-button {
     font-style: italic;  
     font-family: cursive;
+    margin-bottom: -1px;
   }
 
   #user-inputs {
@@ -272,12 +261,12 @@ button {
 
   }
   
-  ul li {
-    margin: 5px;
+  li {
+    padding: 5px;
 
   }
   button {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 }
