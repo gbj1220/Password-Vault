@@ -50,6 +50,10 @@ body {
   font-family: fantasy;
 }
 
+#current-passwords-header {
+  text-decoration: underline;
+}
+
 #submit-button {
   height: 50px;
   width: 100px;
