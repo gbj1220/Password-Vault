@@ -103,7 +103,6 @@ body {
 #footer {
   display: grid;
   grid-area: ftr;
-  justifs-content: right;
   align-items: center;
   height: 50px;
   width: 100%;
@@ -123,9 +122,6 @@ body {
   float: right;
   margin-right: 100px;
   margin-top: 100px;
-}
-
-#new-button {
 }
 
 #user-inputs {
@@ -232,4 +228,9 @@ ul li {
     font-weight: bold;
     background-color: black;
 }
+
+  #readme-link {
+    font-size: .2em;
+  }
+
 }
