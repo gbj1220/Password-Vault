@@ -148,6 +148,7 @@ ul li {
     background-color: darkred;
     align-content: space-around;
     background-image: url("https://media.giphy.com/media/EBId5v0YNRyPGHytLK/giphy.gif");
+    background-position: 11cm;
     grid-template-areas: 
     "hdr"    
     "smb"
