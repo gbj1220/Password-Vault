@@ -37,9 +37,9 @@ dataBase.addEventListener(`click`, (event) => {
   const button = document.createElement('button')
   button.addEventListener('click', () => {
       for (const id of db) {
-        const id = id - 1
-        if (id === db.length) {
-          db.remove(this.db)
+        const buttonID = id - 1
+        if (buttonID === db.length) {
+
         }
         
       }
@@ -60,6 +60,7 @@ dataBase.addEventListener(`click`, (event) => {
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
   button.id = db.length
+  
 })
 
 const ul = document.querySelector('ul')
