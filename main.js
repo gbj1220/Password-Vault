@@ -35,15 +35,15 @@ dataBase.addEventListener(`click`, (event) => {
   passwordLI.innerText = `Password: ${password}`
 
   const button = document.createElement('button')
-  button.addEventListener('click', () => {
-      for (const id of db) {
-        const buttonID = id - 1
-        if (buttonID === db.length) {
+  // button.addEventListener('click', () => {
+    
+  //   for (let i = 0; i < db.length; i++) {
+  //     let buttons = button[i] - 1
+  //     if (buttons === db[i]) {
+  //       console.log('hello')
+  //     }
+  //   }
 
-        }
-        
-      }
-  })
   button.innerText = 'Delete'
 
   const ul = document.querySelector('ul')
@@ -56,11 +56,12 @@ dataBase.addEventListener(`click`, (event) => {
     domain: domain,
     username: username,
     password: password,
+    id: ''
   }
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
-  button.id = db.length
-  
+  db.id = db.length 
+
 })
 
 const ul = document.querySelector('ul')
