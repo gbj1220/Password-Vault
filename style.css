@@ -54,7 +54,6 @@ body {
   background-color: black;
   color: darkred;
   grid-area: smb;
-  margin-top: 10px;
   border-style: solid;
   border-color: yellow;
 }
@@ -148,11 +147,12 @@ ul li {
     grid-template-columns: 100%;
     background-color: darkred;
     align-content: space-around;
+    background-image: url("https://media.giphy.com/media/EBId5v0YNRyPGHytLK/giphy.gif");
     grid-template-areas: 
     "hdr"    
     "smb"
     "ent"
-    "cpw"
+    "cpw";
   }
 
   #header {
@@ -210,21 +210,21 @@ ul li {
   #domain-name {
     width: 300px;
     background-color: black;
-    color: red;
+    color: yellow;
     font-weight: bold;
     margin-top: 900px;
 }
 
   #username {
     width: 300px;
-    color:  red;
+    color:  yellow;
     font-weight: bold;
     background-color: black;
 }
 
   #password {
     width: 300px;
-    color: red;
+    color: yellow;
     font-weight: bold;
     background-color: black;
 }
@@ -232,5 +232,4 @@ ul li {
   #readme-link {
     font-size: .2em;
   }
-
 }
