@@ -40,9 +40,11 @@ body {
 }
 
 #current-passwords {
+  grid-area: cpw;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   text-align: center;
-  grid-area: cpw;
   background-color: black;
   color: darkred;
   font-family: fantasy;
@@ -69,8 +71,9 @@ body {
   background-color: black;
   color: darkred;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-top: 20px;
+  margin-left: 35px;
 }
 
 #domain-name {
@@ -136,10 +139,21 @@ body {
 }
 
 ul li {
-  list-style-type: none; 
-  display: flex;
-  flex-direction: column;
+  margin-top: 5px; 
   margin-right: 50px;
+  list-style-type: none;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  background-color: black;
+  color: darkred;
+  border-style: solid;
+  border-color: yellow;
+  font-weight: bold;
+  font-family: monospace;
 }
 
 @media(max-width: 400px)  {
@@ -256,6 +270,7 @@ ul li {
   
   ul li {
     margin: 5px;
+
   }
   button {
     margin-top: 10px;
