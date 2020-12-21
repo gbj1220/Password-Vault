@@ -145,6 +145,8 @@ ul li {
 @media(max-width: 400px)  {
   #container {
     display: grid;
+    width: 100%;
+    height: 100vh;
     grid-template-rows: 10% 35% 35% 20%;
     grid-template-columns: 100%;
     background-color: darkred;
@@ -244,5 +246,19 @@ ul li {
   #readme-link {
     margin-top: -22px;
     font-size: .2em;
+  }
+
+  ul {
+    background-color: darkred;
+    width: 88%;
+
+  }
+  
+  ul li {
+    margin: 5px;
+  }
+  button {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
