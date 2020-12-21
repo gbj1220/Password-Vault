@@ -50,6 +50,7 @@ dataBase.addEventListener(`click`, (event) => {
   }
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
+  newDB.id = db.length
 })
 
 const ul = document.querySelector('ul')
@@ -75,14 +76,12 @@ const ul = document.querySelector('ul')
 
 }
 
-
 const deleteAll = document.querySelector('#delete-all-button')
 deleteAll.addEventListener('keydown', () => {
   localStorage.clear()
   window.location.reload()
 })
 
-const deleteItem = querySelector('button')
-deleteItem.addEventListener('click', () => {
 
-})
+
+
