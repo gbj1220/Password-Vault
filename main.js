@@ -35,6 +35,15 @@ dataBase.addEventListener(`click`, (event) => {
   passwordLI.innerText = `Password: ${password}`
 
   const button = document.createElement('button')
+  button.addEventListener('click', () => {
+      for (const id of db) {
+        const id = id - 1
+        if (id === db.length) {
+          db.remove(this.db)
+        }
+        
+      }
+  })
   button.innerText = 'Delete'
 
   const ul = document.querySelector('ul')
@@ -50,7 +59,7 @@ dataBase.addEventListener(`click`, (event) => {
   }
   db.push(newDB)
   localStorage.setItem("db", JSON.stringify(db))
-  newDB.id = db.length
+  button.id = db.length
 })
 
 const ul = document.querySelector('ul')
